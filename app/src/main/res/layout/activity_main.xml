@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.user.mychatapp.mvvm.viewmodel.MainViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_size"
+            android:id="@+id/tittle"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:textColor="@color/red"
+            />
+
+        <ScrollView
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/ic_light" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="left"
+                            android:text="@string/light"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/title_size"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_title"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@color/blue" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <ImageView
+                            android:alpha="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_livingroom" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="4"
+                            android:gravity="left"
+                            android:layout_gravity="center"
+                            android:text="@string/living_room"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/item_size" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/sw_living_room"
+                            app:theme="@style/BrandedSwitch.control" />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_garage" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:layout_gravity="center"
+                            android:text="@string/garage_room"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/item_size" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/sw_garage_room"
+                            app:theme="@style/BrandedSwitch.control" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <ImageView
+                            android:alpha="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_dinnerroom" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40px"
+                            android:layout_weight="4"
+                            android:layout_gravity="center"
+                            android:gravity="left"
+                            android:text="@string/dinner_room"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/item_size" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/sw_dinner_room"
+                            app:theme="@style/BrandedSwitch.control" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_item"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_bedroom" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:layout_gravity="center"
+                            android:gravity="left"
+                            android:text="@string/bed_room"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/item_size" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/sw_bed_room"
+                            app:theme="@style/BrandedSwitch.control" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_item"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_wc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="left"
+                            android:layout_gravity="center"
+                            android:text="@string/wc"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/item_size" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/sw_wc"
+                            app:theme="@style/BrandedSwitch.control" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:src="@drawable/ic_door" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="left"
+                            android:text="@string/door"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/title_size"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_title"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@color/blue" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_garagedoor" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="left"
+                            android:layout_gravity="center"
+                            android:text="@string/gara"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/item_size" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/sw_garage_door"
+                            app:theme="@style/BrandedSwitch.control"
+
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_maindoor" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:layout_gravity="center"
+                            android:gravity="left"
+                            android:text="@string/main_door"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/item_size" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/sw_main_door"
+                            app:theme="@style/BrandedSwitch.control" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:layout_marginRight="@dimen/margin_right_item"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_sidedoor" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="@string/side_door"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/item_size" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/sw_side_door"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:theme="@style/BrandedSwitch.control" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</layout>
+
+
+
+

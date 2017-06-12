@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="BrandedSwitch.control" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#85f70b</item>
+        <item name="colorSwitchThumbNormal">#f5fdf8</item>
+    </style>
+
+    <style name="Theme.Uplatform" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:alertDialogTheme">@style/DialogUplatform</item>
+    </style>
+
+    <style name="DialogUplatform" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:background">#5d5e5d</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+</resources>

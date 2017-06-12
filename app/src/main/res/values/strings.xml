@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+    <string name="user">User Name: </string>
+    <string name="password">Password: </string>
+    <string name="email">Email: </string>
+    <string name="log_in">Sign In</string>
+
+    <string name="door">Control Door</string>
+    <string name="main_door">Main door :</string>
+    <string name="gara">Garage :</string>
+    <string name="side_door">Side door :</string>
+
+
+    <string name="light">Control Light</string>
+    <string name="living_room">Living room :</string>
+    <string name="bed_room">Bed room :</string>
+    <string name="wc">WC :</string>
+    <string name="garage_room">Garage room :</string>
+    <string name="dinner_room">Dinner room :</string>
+
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected :</string>
+
+</resources>
